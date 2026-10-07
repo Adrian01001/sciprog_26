@@ -6,6 +6,7 @@ Below contains extra information relevant only to me:
 
 ## TODO List
 
+- [x] Practical 2
 - [x] Practical 3
 - [ ] Practical 4
 - [ ] Practical 5
