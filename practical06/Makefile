@@ -1,18 +1,18 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c11
 TARGET = matmult
 OBJS = main.o matmult.o
 
 all: $(TARGET)
+	rm $(OBJS)
 
 matmult: $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) -o $@ $^
 
 main.o: main.c matmult.h
-	$(CC) $(CFLAGS) -c $<
+	$(CC) -c $<
 
 matmult.o: matmult.c matmult.h
-	$(CC) $(CFLAGS) -c $<
+	$(CC) -c $<
 
 clean:
 	rm -f $(OBJS) $(TARGET)
