@@ -12,7 +12,7 @@ int main(void) {
 	scanf("%d", &n);
 	
 	int *a = allocateArray(n);
-//	printArray(a, n);
+	// printArray(a, n);
 	fillWithOnes(a, n);
 	printArray(a, n);
 	freeArray(a);
@@ -21,6 +21,7 @@ int main(void) {
 }
 
 int *allocateArray(int n) {
+	// Dynamically allocates array
 	int *a = (int *) malloc(n * sizeof(int));
 	return a;
 }
@@ -34,6 +35,7 @@ void fillWithOnes(int *a, int n) {
 }
 
 void printArray(int *a, int n) {
+	// Similar to the one in the lecture notes
 	int i;
 	
 	for (i = 0; i < n; i++) {
