@@ -1,4 +1,4 @@
-Practical 9
+# Practical 9
 
 This practical was about magic squares. We had to check whether a given matrix had the same row sums, column sums, and diagonal (and off-diagonal) sums. This involved the following:
 
